@@ -304,7 +304,7 @@ function applyOperation(current,op){
 </script>
 <script type="module">
 // Connects to the original project. Loading the page never writes to Firebase.
-const firebaseConfig={apiKey:'AIzaSyBzLniWgvspGh4X1-TuaPyJwDQ80VWUjo4',authDomain:'loanflow-b66bf.firebaseapp.com',databaseURL:'https://loanflow-b66bf-default-rtdb.asia-southeast1.firebasedatabase.app',projectId:'loanflow-b66bf',storageBucket:'loanflow-b66bf.firebasestorage.app',messagingSenderId:'844527121298',appId:'1:844527121298:web:2faabab2279a2a3e34074b',measurementId:'G-P46PKXR55B'};
+const firebaseConfig={apiKey:'AIzaSyBzLniWgvspGh4X1-TuaPyJwDQ8OVWUjo4',authDomain:'loanflow-b66bf.firebaseapp.com',databaseURL:'https://loanflow-b66bf-default-rtdb.asia-southeast1.firebasedatabase.app',projectId:'loanflow-b66bf',storageBucket:'loanflow-b66bf.firebasestorage.app',messagingSenderId:'844527121298',appId:'1:844527121298:web:2faabab2279a2a3e34074b',measurementId:'G-P46PKXR55B'};
 try{
  const [{initializeApp},{getDatabase,ref,onValue,runTransaction},{getAuth,setPersistence,browserLocalPersistence,signInWithEmailAndPassword,onAuthStateChanged,signOut}]=await Promise.all([import('https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js'),import('https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js'),import('https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js')]);
  const app=initializeApp(firebaseConfig),db=getDatabase(app),auth=getAuth(app),loansRef=ref(db,'loans'),AUTHORIZED_UID='qLQjGfFXM8UksGN2dPrWLzifVJE3';
